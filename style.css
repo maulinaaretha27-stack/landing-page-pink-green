@@ -1,0 +1,464 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8fb;
+    color: #26352d;
+}
+
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root {
+    --pink: #f58caf;
+    --pink-light: #ffe2ec;
+    --green: #6f9f78;
+    --green-dark: #41694a;
+    --cream: #fff8fb;
+    --white: #ffffff;
+    --text: #26352d;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f3dce5;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--green-dark);
+}
+
+.logo span {
+    color: var(--pink);
+}
+
+nav {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--pink);
+}
+
+.nav-button {
+    text-decoration: none;
+    color: white;
+    background: var(--green);
+    padding: 12px 22px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.nav-button:hover {
+    background: var(--green-dark);
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.primary-button,
+.secondary-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.primary-button {
+    background: var(--pink);
+    color: white;
+}
+
+.primary-button:hover {
+    background: #e8759a;
+    transform: translateY(-3px);
+}
+
+.secondary-button {
+    border: 1px solid var(--green);
+    color: var(--green-dark);
+}
+
+.secondary-button:hover {
+    background: var(--green);
+    color: white;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 80px 10%;
+    gap: 80px;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.small-title {
+    color: var(--pink);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 65px;
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span,
+.section-title span,
+.about-text span,
+.contact span {
+    color: var(--pink);
+}
+
+.description {
+    max-width: 500px;
+    line-height: 1.7;
+    color: #66736c;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* HERO CARD */
+
+.hero-card {
+    width: 360px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: var(--green);
+    color: white;
+
+    border-radius: 180px 180px 30px 30px;
+
+    box-shadow: 20px 20px 0 var(--pink-light);
+}
+
+.flower {
+    width: 100px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--pink-light);
+    color: var(--pink);
+
+    font-size: 55px;
+
+    margin-bottom: 25px;
+}
+
+.hero-card h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    max-width: 240px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   BENEFIT
+========================= */
+
+.benefit {
+    padding: 100px 10%;
+    background: white;
+}
+
+.section-title {
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.section-title h2 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    padding: 35px;
+
+    background: var(--cream);
+    border: 1px solid #f0dfe5;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--pink);
+}
+
+.icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--pink-light);
+    color: var(--pink);
+
+    border-radius: 15px;
+
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #66736c;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    padding: 100px 10%;
+}
+
+.about-image {
+    width: 45%;
+    min-height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--pink-light);
+
+    border-radius: 30px;
+}
+
+.circle {
+    width: 230px;
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--green);
+    color: white;
+
+    font-size: 100px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 45px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about-text > p:not(.small-title) {
+    color: #66736c;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+    padding: 100px 20px;
+
+    background: var(--green);
+    color: white;
+}
+
+.contact .small-title {
+    color: var(--pink-light);
+}
+
+.contact h2 {
+    font-size: 45px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.contact p:not(.small-title) {
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px 10%;
+
+    background: #26352d;
+    color: white;
+}
+
+footer .logo {
+    color: white;
+}
+
+footer p {
+    font-size: 14px;
+    color: #bfc9c2;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 300px;
+        height: 340px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
